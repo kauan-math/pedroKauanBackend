@@ -9,8 +9,10 @@ Este trabalho consiste em montar um CRUD para personagens de Jujutsu Kaisen
 
 # Como rodar o projeto na sua máquina
 
+- abrir o terminal gitbash
 - Clonar o repositório do GitHub
-- Inserir no terminal gitbash, o comando "code ."
+- Inserir o comando "cd pedroKauanBackend/"
+- Inserir o comando "code ."
 - Abrir o terminal gitbash no VS Code, e inserir o comando "npm i"
 - Inserir o comando "npm run dev" no terminal
 - Ir ao postman, criar os personagens na aba Personagens, na parte de "create", no "body", ir na aba "raw", trocar de "text", para "json", inserir os dados do personagem desejado
@@ -22,7 +24,36 @@ Este trabalho consiste em montar um CRUD para personagens de Jujutsu Kaisen
 
 # Como testar as requisições
 
-- Rota 1:
-  - URL: <digite a url aqui>
-  - Método: <GET, POST, PUT, DELETE>
-  - Body: <quais campos enviar no corpo da requisição>
+- Rota Create:
+  - URL: <http://localhost:8080/personagens>
+  - Método: <POST>
+  - Body: <"nome": "",
+           "idade": ,
+           "tecnicaAmaldicoada": "",
+           "grau": "",
+           "clan":"",
+           "dominio": "" >
+
+- Rota list:
+  - URL: <http://localhost:8080/personagens>
+  - Método: <GET>
+  - Body: <"nome": "",
+           "idade": ,
+           "tecnicaAmaldicoada": "",
+           "grau": "",
+           "clan":"",
+           "dominio": "" >
+
+- Rota lisGatbyId:
+  - URL: <http://localhost:8080/personagens/*>
+  - Método: <GET>
+  - Body: < vai aparecer o que você criou >
+
+- Rota update:
+  - URL: <http://localhost:8080/personagens/*>
+  - Método: <PUt>
+  - Body: < atualizar os dados de um personagem especifico >
+
+- Rota list:
+  - URL: <http://localhost:8080/personagens/*>
+  - Método: <DEL>
