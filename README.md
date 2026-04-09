@@ -27,22 +27,28 @@ Este trabalho consiste em montar um CRUD para personagens de Jujutsu Kaisen
 - Rota Create:
   - URL: <http://localhost:8080/personagens>
   - Método: <POST>
-  - Body: <"nome": "",
-           "idade": ,
-           "tecnicaAmaldicoada": "",
-           "grau": "",
-           "clan":"",
-           "dominio": "" >
+  - Body: 
+  {
+    <"nome": "",
+    "idade": ,
+    "tecnicaAmaldicoada": "",
+    "grau": "",
+    "clan":"",
+    "dominio": "" >
+  }
 
 - Rota list:
   - URL: <http://localhost:8080/personagens>
   - Método: <GET>
-  - Body: <"nome": "",
-           "idade": ,
-           "tecnicaAmaldicoada": "",
-           "grau": "",
-           "clan":"",
-           "dominio": "" >
+  - Body: 
+  {
+    <"nome": "",
+    "idade": ,
+    "tecnicaAmaldicoada": "",
+    "grau": "",
+    "clan":"",
+    "dominio": "" >
+  }
 
 - Rota lisGatbyId:
   - URL: <http://localhost:8080/personagens/*>
@@ -57,3 +63,4 @@ Este trabalho consiste em montar um CRUD para personagens de Jujutsu Kaisen
 - Rota list:
   - URL: <http://localhost:8080/personagens/*>
   - Método: <DEL>
+  - Body: < deletar o personagem especifico >
